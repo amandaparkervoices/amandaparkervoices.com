@@ -1,217 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amanda Parker | Voice Actor</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial, sans-serif;
 color:white;
+text-align:center;
 
-background: linear-gradient(135deg,#ff7adf,#a855f7,#3b82f6);
-background-attachment: fixed;
+background: linear-gradient(120deg,#ff5fbf,#a66cff,#4f8cff);
+background-size:400% 400%;
+animation:gradientShift 18s ease infinite;
+}
+
+@keyframes gradientShift{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.hero img{
+width:100%;
+max-height:340px;
+object-fit:cover;
 }
 
 .container{
 max-width:1000px;
 margin:auto;
 padding:40px 20px;
-text-align:center;
-}
-
-.banner{
-width:100%;
-border-radius:12px;
-margin-bottom:30px;
 }
 
 h1{
+margin-top:10px;
 font-size:42px;
-margin-bottom:10px;
 }
 
 h2{
-margin-top:40px;
-font-size:28px;
+margin-top:60px;
 }
 
-p{
+.subtitle{
+opacity:0.9;
+}
+
+.headshot{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+margin-top:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+
+.about{
+max-width:650px;
+margin:25px auto;
 font-size:18px;
+line-height:1.6;
+}
+
+.buttons{
+margin-top:20px;
 }
 
 .button{
 display:inline-block;
-margin-top:10px;
-padding:12px 20px;
-background:#ff6ec7;
-color:white;
+margin:8px;
+padding:12px 22px;
+background:white;
+color:black;
 border-radius:8px;
-text-decoration:none;
 font-weight:bold;
+text-decoration:none;
+transition:transform .15s;
 }
 
 .button:hover{
-background:#ff4fb5;
+transform:scale(1.05);
 }
 
-.grid{
+.demo iframe{
+margin-top:25px;
+border-radius:10px;
+}
+
+.credits-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-margin-top:20px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+max-width:900px;
+margin:40px auto;
 }
 
 .credit{
-background:rgba(255,255,255,0.1);
-padding:15px;
-border-radius:10px;
+background:rgba(255,255,255,0.15);
+padding:18px;
+border-radius:14px;
+text-decoration:none;
+color:white;
+transition:all .15s;
 }
 
-.credit img{
-width:100%;
-border-radius:8px;
+.credit:hover{
+background:rgba(255,255,255,0.25);
+transform:scale(1.05);
 }
 
-.headshot{
-width:220px;
-border-radius:100%;
-margin-top:10px;
-}
-
-iframe{
-margin-top:20px;
-border-radius:10px;
-}
-
-.footer{
-margin-top:60px;
-font-size:16px;
-opacity:0.9;
+footer{
+margin-top:70px;
+padding:35px;
+background:rgba(0,0,0,0.25);
 }
 
 </style>
 </head>
 
-
 <body>
+
+<div class="hero">
+<img src="banner.png">
+</div>
 
 <div class="container">
 
-<img src="banner.png" class="banner">
-
 <h1>Amanda Parker</h1>
-<p><b>Voice Actor • Director • Singer</b></p>
+<p class="subtitle">Voice Actor • Director • Singer</p>
 
-<p>
-Animation • Video Games • Commercial
-</p>
-
-<img src="Headshot.jpg" class="headshot">
-
-<br><br>
-
-<a class="button" href="AmandaParker_VO_Resume.pdf" target="_blank">
-Download Resume
-</a>
-
-<br><br>
-
-<a class="button" href="https://www.imdb.com/" target="_blank">
-View IMDb
-</a>
+<div class="demo">
 
 <h2>Voice Demo</h2>
 
 <iframe width="560" height="315"
-src="https://www.youtube.com/embed/jktrva2to5U"
-allowfullscreen>
-</iframe>
+src="https://www.youtube.com/embed/fDur8mNJIb4"
+title="Voice Demo"
+frameborder="0"
+allowfullscreen></iframe>
+
+</div>
+
+<img src="Headshot.jpg" class="headshot">
+
+<div class="about">
+
+<p>Hello! My name is Amanda. I am a non-binary voice actor, director, and commercial actor located in Vancouver, Canada.</p>
+
+<p>From acting with Driftwood Theatre School to voice acting from home or in studio, I live to bring characters to life.</p>
+
+</div>
+
+<div class="buttons">
+
+<a class="button" href="AmandaParker_VO_Resume.pdf" download>Download VO Resume</a>
+
+<a class="button" href="https://m.imdb.com/name/nm10999402/" target="_blank">IMDb</a>
+
+</div>
 
 
 <h2>Featured Credits</h2>
 
-<div class="grid">
+<div class="credits-grid">
 
-<div class="credit">
-<p><b>Nukitashi the Animation</b><br>
-Nanase Katagiri (Lead)</p>
+<a class="credit" href="https://www.youtube.com/watch?v=TVnZO0GcMQw" target="_blank">
+<strong>Nukitashi: The Animation</strong><br>
+Nanase Katagiri
+</a>
+
+<a class="credit" href="https://www.youtube.com/watch?v=6qh7taI7r8o" target="_blank">
+<strong>Makina-san's a Love Bot?!</strong><br>
+Ms. Hashirai
+</a>
+
+<a class="credit" href="https://www.primevideo.com/detail/Fire-in-His-Fingertips-My-Childhood-Friend-is-a-Fireman-On-Air-Version/0RDKT608LUO2V0Z26O58DKWFTH" target="_blank">
+<strong>Fire in His Fingertips</strong><br>
+Ryo Fujihashi
+</a>
+
+<a class="credit" href="https://www.primevideo.com/detail/I-Want-to-Be-His-Prey-On-Air-Version/0IWEKYK0ZYDUB0VCGQOB25AKZ4" target="_blank">
+<strong>I Want to Be His Prey!</strong><br>
+Hinako Okami
+</a>
+
+<a class="credit" href="https://store.steampowered.com/app/459820/Crush_Crush/" target="_blank">
+<strong>Crush Crush</strong><br>
+Generica
+</a>
+
+<a class="credit" href="https://store.steampowered.com/app/782250/Hush_Hush__Only_Your_Love_Can_Save_Them/" target="_blank">
+<strong>Hush Hush</strong><br>
+Cali
+</a>
+
+<a class="credit" href="https://www.youtube.com/watch?v=eQPjW8QxQgg" target="_blank">
+<strong>HEX</strong><br>
+Buttons
+</a>
+
+<a class="credit" href="https://store.steampowered.com/app/1158220/Kraken_Academy/" target="_blank">
+<strong>Kraken Academy!!</strong><br>
+Patitsa
+</a>
+
+<a class="credit" href="https://store.steampowered.com/app/1470420/ReTurn_2__Runaway/" target="_blank">
+<strong>Re:Turn 2 - Runaway</strong><br>
+Ayumi / Evil Ayumi
+</a>
+
+<a class="credit" href="https://store.steampowered.com/app/1598160/Bloodwash/" target="_blank">
+<strong>Bloodwash</strong><br>
+Old Woman
+</a>
+
+<a class="credit" href="https://store.steampowered.com/app/1253880/Heart_Fragment/" target="_blank">
+<strong>Heart Fragment</strong><br>
+Natalia
+</a>
+
+<a class="credit" href="https://www3.nhk.or.jp/nhkworld/en/shows/4036008/" target="_blank">
+<strong>u&i</strong><br>
+Episode 8 "i"
+</a>
+
 </div>
-
-<div class="credit">
-<p><b>Makina-san's a Love Bot?!</b><br>
-Ms. Hashirai</p>
-</div>
-
-<div class="credit">
-<p><b>Adam's Sweet Agony</b><br>
-Chio</p>
-</div>
-
-<div class="credit">
-<p><b>Fire in His Fingertips</b><br>
-Ryo Fujihashi (Lead)</p>
-</div>
-
-<div class="credit">
-<p><b>I Want to Be His Prey!</b><br>
-Hinako Okami (Lead)</p>
-</div>
-
-<div class="credit">
-<p><b>Crush Crush</b><br>
-Generica</p>
-</div>
-
-</div>
-
-
-<h2>Commercial Work</h2>
-
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/fDur8mNJIb4"
-allowfullscreen>
-</iframe>
-
-<p>UPMC – Mom</p>
 
 
 <h2>Representation</h2>
 
 <p>
-
-<b>Voice Agent</b><br>
-Shannen McGreevy<br>
-Lucas Talent<br>
-info@lucastalent.com<br>
-604-685-0345
-
-<br><br>
-
-<b>On-Camera Agent</b><br>
-Leyla Carreira<br>
-Lucas Talent
-
+Voice: Shannen McGreevy – Lucas Talent<br>
+On-Camera: Leyla Carreira – Lucas Talent<br><br>
+Agent Contact: info@lucastalent.com
 </p>
 
+</div>
 
-<h2>Contact</h2>
+<footer>
+
+<h3>Contact</h3>
 
 <p>
-Amanda Parker Voices<br>
-amandaparkervoices@gmail.com
+amandaparkervoices@gmail.com<br>
 </p>
 
-
-<div class="footer">
-© Amanda Parker Voices
-</div>
-
-</div>
+</footer>
 
 </body>
 </html>
-<!-- site update -->
